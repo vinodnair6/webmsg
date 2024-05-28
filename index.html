@@ -156,22 +156,22 @@ hr {
       <label for="phone"><b>Phone</b></label>
       <input type="text" placeholder="Enter Phone" name="phone" id="phone" required>
       
-      <div class="clearfix">
-        <div
-        class="g-recaptcha"
-        data-sitekey="6Le4dXMpAAAAAM_OBhDIVgqFAMrRRGC3dhte7Prj"
-        data-callback="callback"
-        ></div>
+      //<div class="clearfix">
+       //<div
+        //class="g-recaptcha"
+        //data-sitekey="6Le4dXMpAAAAAM_OBhDIVgqFAMrRRGC3dhte7Prj"
+        //data-callback="callback"
+        //></div>
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
         <button type="button" id="submit-button" onclick="toggleMessenger(document.getElementById('custname').value,document.getElementById('email').value,document.getElementById('phone').value)" class="signupbtn" disabled>Chat</button>
         
         <script type="text/javascript">
-          // Enable button
-          //function callback() {
+          //Enable button
+          function callback() {
             //Do captcha validtion here
-            //const submitButton = document.getElementById("submit-button");
-            //submitButton.removeAttribute("disabled");
-          //}
+            const submitButton = document.getElementById("submit-button");
+            submitButton.removeAttribute("disabled");
+          }
         </script>
       </div>
     </div>
